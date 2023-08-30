@@ -1,0 +1,14 @@
+.project-section {
+    display: grid;
+    margin-top:var(--mb-2);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .project-card {
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
