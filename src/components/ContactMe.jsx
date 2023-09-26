@@ -1,4 +1,3 @@
-import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./ContactMe.css";
@@ -100,7 +99,7 @@ const ContactMe = () => {
               )}
             </Formik>
           </div>
-          <div className="contact-card">
+          {/* <div className="contact-card">
             <div className="email-icon">
               <span role="img" aria-label="Email Icon">
                 📧
@@ -109,7 +108,7 @@ const ContactMe = () => {
             <a href={`mailto:oladetohunoluwakorede@gmail.com`}>
               <p>Email Me</p>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

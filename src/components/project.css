@@ -1,14 +1,89 @@
+/* Project.css */
+
 .project-section {
     display: grid;
-    margin-top:var(--mb-2);
+    margin-top: var(--mb-2);
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-  
-  .project-card {
+}
+
+@media screen and (max-width: 768px) {
+    .project-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.description {
+    height: 100px;
+}
+
+.project-card {
     border: 1px solid #ccc;
     background-color: #f7f7f7;
     padding: 20px;
     border-radius: 8px;
-  }
-  
+}
+
+.project-card:hover {
+    border: 2px solid #ccc;
+    transform: scale(0.9);
+}
+
+.project-preview {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.project-card p {
+    margin: 0;
+}
+
+.technologies {
+    margin-top: 10px;
+    /* border: 1px solid #ccc; */
+    padding: 10px 0p;
+    border-radius: 8px;
+}
+
+.technologies ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technologies li {
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}

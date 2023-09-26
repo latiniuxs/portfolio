@@ -1,4 +1,3 @@
-import React from "react";
 import "./AboutMe.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,9 +11,9 @@ const AboutMe = () => {
   return (
     <section className="about section" id="About-me-section">
       <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Story</span>
       <div className="about__container container grid">
         <div className="about__data">
+      <h3 className="about__content-title">Brief About Me</h3>
           <div className="about__info grid">
             <div className="about__box">
               <FontAwesomeIcon icon={faComputer} />{" "}
@@ -45,37 +44,19 @@ const AboutMe = () => {
             </span>
           </a>
         </div>
-        <div className="about__information">
-          <h2 className="information__title section__title">Brief Information</h2>
-          <div className="information__infos">
-            <div className="information__info">
-              <p>
-              Name
-              </p>
-            </div>
-            <div className="information__info">
-              <p>Oluwakorede</p>
-            </div>
+        <div className="about__content-skills">
+        <h3 className="about__content-title">Skills</h3>
+        <div className="skills">
+          <div className="skills__skill">HTML</div>
+          <div className="skills__skill">CSS</div>
+          <div className="skills__skill">JavaScript</div>
+          <div className="skills__skill">React</div>
+          <div className="skills__skill">GIT</div>
+          <div className="skills__skill">Python</div>
+          <div className="skills__skill">Wordpress</div>
 
-            <div className="information__info">
-              <p>
-                Birthday
-              </p>
-            </div>
-            <div className="information__info">
-              <p>February 24</p>
-            </div>
-
-            <div className="information__info">
-              <p>
-              Mail
-              </p>
-            </div>
-            <div className="information__info">
-              <p>oladetohunoluwakorede@gmail.com</p>
-            </div>
-          </div>
         </div>
+      </div>
       </div>
     </section>
   );

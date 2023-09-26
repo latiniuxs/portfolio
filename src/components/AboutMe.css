@@ -2,12 +2,12 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 4rem;
-    row-gap:3rem;
+    row-gap: 3rem;
 }
+
 .about__img {
     width: 350px;
     border-radius: 1.5rem;
-
     justify-self: center;
 }
 
@@ -19,13 +19,18 @@
 
 .about__box {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 12);
+    border: 1px solid #816797;
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
 }
 
-.about__icon {
+.about__box:hover {
+    border: 2px solid #816797;
+    transform: scale(1.1);
+}
+
+. .about__icon {
     font-size: 1.5rem;
     color: var(--title-color);
     margin-bottom: var(--mb-0-5);
@@ -45,29 +50,26 @@
     margin-bottom: var(--mb-2-5);
 }
 
+
 /* BREAK POINTS */
-@media screen and (max-width: 992px) {  
+
+@media screen and (max-width: 992px) {
     .about__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
     }
-
     .about__img {
         width: 220px;
     }
-
     .about__box {
         padding: 0.75rem 0.5rem;
     }
-
     .about__data {
         text-align: center;
     }
-
     .about__info {
         justify-content: center;
     }
-
     .about__description {
         padding: 0 5rem;
         margin-bottom: 2rem;
@@ -78,31 +80,57 @@
     .about__info {
         grid-template-columns: repeat(3, 1fr);
     }
-
     .about__description {
         padding: 0;
     }
 }
 
 @media screen and (max-width: 350px) {
-   .about__info {
-    grid-template-columns: repeat(2, 1fr);
-   }
+    .about__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+
 /* Define the CSS styles for the table-like structure */
 
-
 .information__title {
-  border: 1px solid grey;
-  padding: 8px;
+    border: 1px solid grey;
+    padding: 8px;
 }
 
 .information__infos {
-  display: grid;
-  grid-template-columns: Auto auto;
+    display: grid;
+    grid-template-columns: Auto auto;
 }
 
 .information__info {
-  border: 1px solid grey;
-  padding: 8px;
+    border: 1px solid grey;
+    padding: 8px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__skill {
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1.7rem;
+    font-size: 2rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #777;
+    border: 1px solid grey;
+}
+
+.skills__skill:hover {
+    border: 2px solid #816797;
+    transform: scale(1.01);
+}
+
+.about__content-title {
+    margin-bottom: 10px;
 }

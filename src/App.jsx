@@ -7,14 +7,14 @@ import ContactMe from './components/ContactMe'
 import Footer from './components/footer'
 function App() {
   return (
-    <>
+    <div className = "app-container">
     <Header/>
     <Home/>
     <AboutMe/>
     <Project/>
     <ContactMe/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

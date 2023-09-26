@@ -1,48 +1,61 @@
 .contact-me-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  .contact-form {
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    width: 100%;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.section__title {
+    padding-bottom: 20px;
+}
+
+.contact-form {
     background-color: #f7f7f7;
     padding: 20px;
+    width: 60%;
     border-radius: 8px;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 15px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     font-weight: bold;
-  }
-  
-  input,
-  textarea {
+}
+
+input,
+textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .error {
+}
+
+input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+.error {
     color: red;
     font-size: 14px;
     margin-top: 5px;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 15px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .contact-card {
+}
+
+.contact-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,10 +63,9 @@
     background-color: #f7f7f7;
     padding: 20px;
     border-radius: 8px;
-  }
-  
-  .email-icon {
+}
+
+.email-icon {
     font-size: 40px;
     margin-bottom: 10px;
-  }
-  
+}
