@@ -2,7 +2,7 @@ const projects = [
   {
     title: "MetaBnB",
     description: "Responsive UI for a metaverse housing marketplace",
-    preview: "/assets/metabnb.jpg", 
+    preview: "./assets/metabnb.jpg", 
     link: "https://oladetohun1.github.io/metabnb/", 
     technologies: ["React"],
   },
