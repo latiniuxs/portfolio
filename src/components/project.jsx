@@ -1,5 +1,5 @@
+import "./project.css"
 import projects from '../Data/projectsData';
-import "./Project.css"
 
 const Project = () => {
   return (
