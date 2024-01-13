@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Box, HStack } from "@chakra-ui/react";
 import { NavLink} from "react-router-dom";
 import "./Header.css"; 
+
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
