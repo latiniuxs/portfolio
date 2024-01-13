@@ -1,10 +1,10 @@
 import './App.css'
 import Header from './components/Header' 
 import Home from './components/Home'
+import Footer from './components/Footer'
 import AboutMe from './components/AboutMe'
-import Project from './components/project'
 import ContactMe from './components/ContactMe'
-import Footer from './components/footer'
+import Project from './components/Project'
 function App() {
   return (
     <div className = "app-container">
