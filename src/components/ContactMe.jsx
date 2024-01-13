@@ -15,7 +15,7 @@ const ContactMe = () => {
     message: Yup.string().required("Message is required"),
   });
 
-  const handleSubmit = async (values, { setSubmitting }) => {
+  const handleSubmit = async (values, { setSubmitting , resetForm}) => {
     const { name, email, message } = values;
     const subject = "New Contact Message";
     const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
@@ -35,6 +35,7 @@ const ContactMe = () => {
 
       if (response.ok) {
         console.log("Email sent successfully!");
+        resetForm()
       } else {
         console.error("Error sending email:", response.statusText);
       }
@@ -99,16 +100,6 @@ const ContactMe = () => {
               )}
             </Formik>
           </div>
-          {/* <div className="contact-card">
-            <div className="email-icon">
-              <span role="img" aria-label="Email Icon">
-                📧
-              </span>
-            </div>
-            <a href={`mailto:oladetohunoluwakorede@gmail.com`}>
-              <p>Email Me</p>
-            </a>
-          </div> */}
         </div>
       </div>
     </section>

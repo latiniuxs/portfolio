@@ -17,7 +17,9 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  /* background-color: var(--body-color);
+   */
+   background-color: black;
   color: var(--text-color);
 }
 h1,

@@ -1,10 +1,31 @@
 const projects = [
   {
+    title:"FarmFortify",
+    description:"A web application built collaboratively for farmers ",
+    preview:"./assets/Farm.jpg",
+    link:"https://farmfortify.com/",
+    technologies:["React"],
+  },
+  {
     title: "MetaBnB",
     description: "Responsive UI for a metaverse housing marketplace",
     preview: "./assets/metabnb.jpg", 
     link: "https://oladetohun1.github.io/metabnb/", 
     technologies: ["React"],
+  },
+  {
+    title:"medDoc",
+    description:"A medical web application built collaboratively on web5 technology ",
+    preview:"./assets/medDoc.jpg",
+    link:"https://med-doc-sage.vercel.app/",
+    technologies:["React"],
+  },
+  {
+    title:"Todo App",
+    description:"a todo app that helps you to manage tasks at hand. it has features such as drag-and-drop functionality for  task organization. Create, edit, and delete tasks with a click, and re-arrange them",
+    preview:"./assets/TODO.jpg",
+    link: "https://todo-orcin-eta.vercel.app",
+    technologies:["React"," react-dnd", "tailwindcss"],
   },
   {
     title: "Image Gallery",
@@ -14,6 +35,7 @@ const projects = [
     link: "https://image-gallery-sepia-seven.vercel.app",
     technologies: ["React", "Firebase"],
   },
+
   {
     title: "MovieBox",
     description:

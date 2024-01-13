@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, HStack } from "@chakra-ui/react";
 import { NavLink} from "react-router-dom";
 import "./Header.css"; 
@@ -26,7 +26,7 @@ const Header = () => {
             <div className="bar"></div>
             <div className="bar"></div>
           </button>
-          <HStack className={`links ${isMenuOpen ? "open" : ""}`} spacing={8}>
+          <HStack className={`links ${isMenuOpen ? "open" : ""}`}>
             <a href="./" className="portfolio" target="">
               Portfolio
             </a>
