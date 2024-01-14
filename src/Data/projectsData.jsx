@@ -16,7 +16,7 @@ const projects = [
   {
     title:"medDoc",
     description:"A medical web application built collaboratively on web5 technology ",
-    preview:"./assets/medDoc.jpg",
+    preview:"/assets/medDoc.jpg",
     link:"https://med-doc-sage.vercel.app/",
     technologies:["React"],
   },
