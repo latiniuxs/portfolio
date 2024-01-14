@@ -1,6 +1,6 @@
 import "./Project.css"
 
-import projects from '../Data/projectsData';
+import Projects from '../Data/ProjectsData';
 
 
 
@@ -16,7 +16,7 @@ const Project = () => {
 
         <div className="project-section">
 
-          {projects.map((project, index) => (
+          {Projects.map((project, index) => (
 
             <div key={index} className="project-card">
 
